@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prueba</title>
+        <link rel="stylesheet" type="text/css" href="Style.css">
+        <link rel="shortcut icon" href="https://image.flaticon.com/icons/png/512/57/57104.png">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="flor">
+                <div class="petalo--1 divchangecolor"></div> 
+                <div class="petalo--2 divchangecolor" ></div> 
+                <div class="petalo--3 divchangecolor" ></div> 
+                <div class="petalo--4 divchangecolor" ></div> 
+                <div class="petalo--5 divchangecolor" ></div> 
+                <div class="petalo--6 divchangecolor" ></div> 
+                <div class="petalo--7 divchangecolor" ></div> 
+                <div class="petalo--8 divchangecolor" ></div> 
+                <div class="central-circle"  id="centro" onclick="colorFunc()">Click me</div>  
+            </div>
+        </div>
+    </body>
+
+    <script>
+
+        function myNumber(maxNumber) {
+        
+            var random_number = Math.random();
+            var random_integer = random_number * maxNumber;
+            var my_integer = Math.floor(random_integer);
+        
+            return my_integer;
+        }
+
+        function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min)) + min;
+        }
+
+        var color1=false;
+        function colorFunc(){
+            color1 = !color1;
+            arrayClass =  document.getElementsByClassName("divchangecolor")
+            randomNumberInt = getRandomInt(0, arrayClass.length)
+            arrayClass[randomNumberInt].style.background = 'rgb(' + myNumber(255) + ',' + myNumber(255) + ',' + myNumber(255) + ')'
+        }
+            </script>
+        
+
+
+</html>
+

@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.container {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #000;
+  }
+  .flor{
+    width: 300px;
+    height: 300px;
+    animation: Girar 10s linear infinite;
+
+  }
+  .central-circle {
+    position: absolute;
+    top: calc(50% - 50px);
+    right: calc(50% - 50px);
+    width: 100px;
+    height: 100px;
+    background: rgb(218, 205, 24);
+    transform: rotate(45deg);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    font-size: 25px;
+    font-family: cursive;
+  }
+  .petalo--1{
+    position: absolute;
+    top: calc(50% - 50px);
+    right: calc(50% - 145px);
+    background: crimson;
+    width: 100px;
+    height: 100px;
+    border-radius:  30px 50% 50% 30px;
+    transform: scale(1, 0.5);
+  }
+  .petalo--2{
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 145px);
+    background: crimson;
+    width: 100px;
+    height: 100px;
+    border-radius:   50% 30px 30px 50% ;
+    transform: scale(1, 0.5);
+  }
+  .petalo--3{
+    position: absolute;
+    top: calc(50% - 145px);
+    left: calc(50% - 50px);
+    background: crimson;
+    width: 100px;
+    height: 100px;
+    border-radius: 50% 50% 30px 30px;
+    transform: scale(0.5, 1);
+  }
+  .petalo--4{
+    position: absolute;
+    bottom: calc(50% - 145px);
+    left: calc(50% - 50px);
+    background: crimson;
+    width: 100px;
+    height: 100px;
+    border-radius: 30px 30px 50% 50% ;
+    transform: scale(0.5, 1);
+  }
+  .petalo--5{
+    position: absolute;
+    bottom: calc(50% - 110px);
+    left: calc(50% - 120px);
+    background: crimson;
+    width: 110px;
+    height: 90px;
+    border-radius: 30px 30px 50% 50%;
+    transform: rotate(45deg) scale(0.5, 1);
+  }
+  .petalo--6{
+    position: absolute;
+    top: calc(50% - 110px);
+    left: calc(50% - 120px);
+    background: crimson;
+    width: 110px;
+    height: 90px;
+    border-radius: 30px 30px 50% 50%;
+    transform: rotate(135deg) scale(0.5, 1);
+  }
+  .petalo--7{
+    position: absolute;
+    bottom: calc(50% - 110px);
+    right: calc(50% - 120px);
+    background: crimson;
+    width: 110px;
+    height: 90px;
+    border-radius: 30px 30px 50% 50%;
+    transform: rotate(-45deg) scale(0.5, 1);
+  }
+  .petalo--8{
+    position: absolute;
+    top: calc(50% - 110px);
+    right: calc(50% - 120px);
+    background: crimson;
+    width: 110px;
+    height: 90px;
+    border-radius: 30px 30px 50% 50%;
+    transform: rotate(-135deg) scale(0.5, 1);
+  }
+
+  @keyframes Girar { 
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
